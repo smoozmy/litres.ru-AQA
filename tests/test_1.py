@@ -6,15 +6,17 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from pages.login_page import Login_page
+from pages.main_page import Main_page
 
-def test_select_hz():
+
+def test_select_book():
     driver = webdriver.Chrome()
     print('start test')
 
     login = Login_page(driver)
+    mp = Main_page(driver)
 
     login.authorization()
-
-    time.sleep(2)
+    mp.search_book()
 
     driver.quit()
