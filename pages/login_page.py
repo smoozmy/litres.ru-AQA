@@ -21,11 +21,11 @@ class Login_page(Base):
 
     # Locators
 
-    user_button = '//*[@id="layout-root"]/header/div[2]/nav/div[3]/div[2]'
-    email_textfield = '//input[@id="auth__input--enterEmailOrLogin"]'
-    login_one_button = '//*[@id="modal"]/div/div/div/div/div/div/div/form/div[3]/button'
-    password_textfield = '//*[@id="modal"]/div/div/div/div/div/div/div/form/div[2]/div/div/input'
-    login_two_button = '//*[@id="modal"]/div/div/div/div/div/div/div/form/div[3]/button/div/div/div'
+    user_button = '//div[@data-testid="user-button"]'
+    email_textfield = '//input[@data-testid="auth__input--enterEmailOrLogin"]'
+    login_one_button = '//button[@data-testid="auth__button--continue"]'
+    password_textfield = '//input[@data-testid="auth__input--enterPassword"]'
+    login_two_button = '//button[@data-testid="auth__button--enter"]'
     profile_word = '//*[@id="layout-root"]/header/div[2]/nav/div[3]/div[2]/div/a/div[2]'
 
     # Getters
@@ -46,7 +46,7 @@ class Login_page(Base):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.login_two_button)))
 
     def get_profile_word(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.profile_word)))
+        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.user_button)))
 
 
     # Actions
@@ -81,6 +81,8 @@ class Login_page(Base):
         time.sleep(1)
         self.input_password_textfield(self.PASSWORD)
         self.click_login_two_button()
+        time.sleep(2)
+        print('Авторизовано')
 
         self.assert_word(self.get_profile_word(), 'Профиль')
         print(f'Выполнена авторизация пользователем {self.TEST_USER}')
