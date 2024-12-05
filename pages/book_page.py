@@ -1,4 +1,5 @@
 import time
+from time import sleep
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -29,5 +30,5 @@ class Book_page(Base):
 
     def pay_book(self):
         self.click_pay_book_button()
-        print('Книга куплена ✅')
+        time.sleep(2)
 
