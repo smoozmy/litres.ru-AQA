@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf43b568-4c14-4d9d-9343-05724896c7e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/test_new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/new_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,21 +49,38 @@
   "keyToString": {
     "Python tests.Python tests for test_1.test_select_and_pay_book.executor": "Run",
     "Python tests.Python tests for test_1.test_select_hz.executor": "Run",
+    "Python tests.Python tests for test_new.test_new_book_with_filter.executor": "Run",
     "Python tests.Python tests for test_profile.test_logout.executor": "Run",
     "Python tests.Python tests for test_profile.test_profile_check.executor": "Run",
     "Python tests.Python tests for test_profile.test_profile_main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/krapivin/Python AQA/litres.ru AQA/pages",
+    "last_opened_file_path": "/Users/krapivin/Python AQA/litres.ru AQA/tests",
     "settings.editor.selected.configurable": "Console"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_profile.test_profile_check">
+  <component name="RunManager" selected="Python tests.Python tests for test_new.test_new_book_with_filter">
+    <configuration name="Python tests for test_new.test_new_book_with_filter" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="litres.ru AQA" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_new.test_new_book_with_filter&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_profile.test_logout" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="litres.ru AQA" />
       <option name="ENV_FILES" value="" />
@@ -107,21 +126,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.test_search_book" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="litres.ru AQA" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_search_book&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for tests.test_search_book.test_select_and_pay_book" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="litres.ru AQA" />
       <option name="ENV_FILES" value="" />
@@ -139,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_new.test_new_book_with_filter" />
         <item itemvalue="Python tests.Python tests for test_profile.test_profile_check" />
         <item itemvalue="Python tests.Python tests for test_profile.test_logout" />
         <item itemvalue="Python tests.Python tests for test_profile.test_profile_main" />
         <item itemvalue="Python tests.Python tests for tests.test_search_book.test_select_and_pay_book" />
-        <item itemvalue="Python tests.Python tests for tests.test_search_book" />
       </list>
     </recent_temporary>
   </component>

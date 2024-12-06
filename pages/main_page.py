@@ -10,6 +10,9 @@ from base.base_class import Base
 class Main_page(Base):
 
     # Locators
+
+    new_button = '//a[@data-testid="lowerMenu_item"][3]'
+
     search = '//input[@data-testid="search__input"]'
     search_button = '//button[@data-testid="search__button"]'
     search_result_book = '//img[@data-testid="adaptiveCover__img"][1]'
@@ -22,6 +25,8 @@ class Main_page(Base):
 
 
     # Getters
+    def get_new_button(self):
+        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.new_button)))
 
     def get_search(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.search)))
@@ -43,6 +48,9 @@ class Main_page(Base):
 
 
     # Actions
+
+    def click_new_button(self):
+        self.get_new_button().click()
 
     def input_search(self):
         self.get_search().send_keys('Как тестируют в Google')
@@ -101,6 +109,10 @@ class Main_page(Base):
         self.get_current_url()
         print('Выполнен перехорд в Профиль')
 
-
+    def go_to_new(self):
+        self.click_new_button()
+        time.sleep(2)
+        self.get_current_url()
+        print('Выполнен перехорд в раздел Новинки')
 
 

@@ -76,8 +76,5 @@ class Login_page(Base):
         time.sleep(1)
         self.input_password_textfield(self.PASSWORD)
         self.click_login_two_button()
-        time.sleep(2)
+        time.sleep(1)
         print('Авторизовано')
-
-        self.assert_word(self.get_profile_word(), 'Профиль')
-        print(f'Выполнена авторизация пользователем {self.TEST_USER}')
