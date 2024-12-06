@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf43b568-4c14-4d9d-9343-05724896c7e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/profile_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_profile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/payment_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/payment_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_search_book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_profile.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +61,7 @@
       <recent name="$PROJECT_DIR$/pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_profile.test_logout">
+  <component name="RunManager" selected="Python tests.Python tests for test_profile.test_profile_check">
     <configuration name="Python tests for test_profile.test_logout" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="litres.ru AQA" />
       <option name="ENV_FILES" value="" />
@@ -144,8 +139,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_profile.test_logout" />
         <item itemvalue="Python tests.Python tests for test_profile.test_profile_check" />
+        <item itemvalue="Python tests.Python tests for test_profile.test_logout" />
         <item itemvalue="Python tests.Python tests for test_profile.test_profile_main" />
         <item itemvalue="Python tests.Python tests for tests.test_search_book.test_select_and_pay_book" />
         <item itemvalue="Python tests.Python tests for tests.test_search_book" />

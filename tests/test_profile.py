@@ -3,11 +3,11 @@ from selenium import webdriver
 from pages.login_page import Login_page
 from pages.main_page import Main_page
 from pages.profile_page import Profile_page
+from conftest import set_up
 
 
-def test_profile_check():
+def test_profile_check(set_up):
     driver = webdriver.Chrome()
-    print('Start test')
 
     lp = Login_page(driver)
     mp = Main_page(driver)
