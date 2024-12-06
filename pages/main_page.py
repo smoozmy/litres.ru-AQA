@@ -1,4 +1,5 @@
 import time
+from time import sleep
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -8,11 +9,6 @@ from base.base_class import Base
 
 class Main_page(Base):
 
-    # def __init__(self, driver):
-    #     super().__init__(driver)
-    #     self.driver = driver
-
-
     # Locators
     search = '//input[@data-testid="search__input"]'
     search_button = '//button[@data-testid="search__button"]'
@@ -21,6 +17,8 @@ class Main_page(Base):
 
     favorite_button = '//div[@data-testid="tab-favorite"]'
     postpone_search_result_book = '//button[@data-testid="art__postponeButton--unLiked"][1]'
+
+    user_button = '//div[@data-testid="user-button"]'
 
 
     # Getters
@@ -40,6 +38,9 @@ class Main_page(Base):
     def get_postpone_search_result_book(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.postpone_search_result_book)))
 
+    def get_user_button(self):
+        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.user_button)))
+
 
     # Actions
 
@@ -57,6 +58,9 @@ class Main_page(Base):
 
     def click_postpone_search_result_book(self):
         self.get_postpone_search_result_book().click()
+
+    def click_user_button(self):
+        self.get_user_button().click()
 
 
     # Methods
@@ -91,6 +95,11 @@ class Main_page(Base):
         time.sleep(2)
         self.get_current_url()
 
+    def go_to_profile(self):
+        self.click_user_button()
+        time.sleep(1)
+        self.get_current_url()
+        print('Выполнен перехорд в Профиль')
 
 
 

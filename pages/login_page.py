@@ -14,11 +14,6 @@ class Login_page(Base):
     PASSWORD = 'smoozmytest'
 
 
-    # def __init__(self, driver):
-    #     super().__init__(driver)
-    #     self.driver = driver
-
-
     # Locators
 
     user_button = '//div[@data-testid="user-button"]'
