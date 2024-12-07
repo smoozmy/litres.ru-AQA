@@ -1,3 +1,5 @@
+import allure
+
 from selenium import webdriver
 
 from pages.book_page import Book_page
@@ -6,7 +8,7 @@ from pages.login_page import Login_page
 from pages.main_page import Main_page
 from pages.payment_page import Payment_page
 
-
+@allure.description('[Test select and pay book] Поиск книги, переход на карточку продукта и покупка')
 def test_select_and_pay_book():
     driver = webdriver.Chrome()
     print('Start test')

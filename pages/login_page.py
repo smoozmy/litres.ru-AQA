@@ -1,4 +1,5 @@
 import time
+import allure
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -68,18 +69,20 @@ class Login_page(Base):
     # Methods
 
     def authorization(self):
-        Logger.add_start_step(method='authorization')
+        with allure.step('[authorization] Выполнение авторизации'):
+            Logger.add_start_step(method='authorization')
 
-        self.driver.get(self.BASE_URL)
-        self.driver.maximize_window()
-        self.get_current_url()
+            self.driver.get(self.BASE_URL)
+            self.driver.maximize_window()
+            self.get_current_url()
 
-        self.click_user_button()
-        self.input_email_textfield(self.TEST_USER)
-        self.click_login_one_button()
-        time.sleep(1)
-        self.input_password_textfield(self.PASSWORD)
-        self.click_login_two_button()
-        time.sleep(1)
-        print('Авторизовано')
-        Logger.add_end_step(url=self.driver.current_url, method='authorization')
+            self.click_user_button()
+            self.input_email_textfield(self.TEST_USER)
+            self.click_login_one_button()
+            time.sleep(1)
+            self.input_password_textfield(self.PASSWORD)
+            self.click_login_two_button()
+            time.sleep(1)
+            print('Авторизовано')
+
+            Logger.add_end_step(url=self.driver.current_url, method='authorization')

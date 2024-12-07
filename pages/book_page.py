@@ -1,5 +1,6 @@
 import time
 from time import sleep
+import allure
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -29,6 +30,7 @@ class Book_page(Base):
     # Methods
 
     def pay_book(self):
-        self.click_pay_book_button()
-        time.sleep(2)
+        with allure.step('[pay book] Покупка книги из карточки'):
+            self.click_pay_book_button()
+            time.sleep(2)
 

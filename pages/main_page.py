@@ -1,5 +1,6 @@
 import time
 from time import sleep
+import allure
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -74,21 +75,22 @@ class Main_page(Base):
     # Methods
 
     def search_book(self):
-        self.input_search()
-        self.click_search_button()
-        time.sleep(1)
-        print('Выполнен поиск по книге')
+        with allure.step('[search book] Поиск книги по названию'):
+            self.input_search()
+            self.click_search_button()
+            time.sleep(1)
+            print('Выполнен поиск по книге')
 
-        self.click_search_result_book()
+            self.click_search_result_book()
 
-        all_tabs = self.driver.window_handles
-        print(f"Все открытые вкладки: {all_tabs}")
+            all_tabs = self.driver.window_handles
+            print(f"Все открытые вкладки: {all_tabs}")
 
-        self.driver.switch_to.window(all_tabs[-1])
-        time.sleep(1)
-        self.get_current_url()
+            self.driver.switch_to.window(all_tabs[-1])
+            time.sleep(1)
+            self.get_current_url()
 
-        assert WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="book-card__wrapper"]/div[2]/div[3]/div[1]/h1'))).text == 'Как тестируют в Google'
+            assert WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="book-card__wrapper"]/div[2]/div[3]/div[1]/h1'))).text == 'Как тестируют в Google'
 
 
     def add_to_favorite_book(self):

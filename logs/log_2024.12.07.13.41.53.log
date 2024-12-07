@@ -1,0 +1,55 @@
+
+-----
+Test: litres.ru AQA/tests/test_new.py::test_new_book_with_filter (call)
+Start time: 2024-12-07 13:41:54.567392
+Start name method: authorization
+
+End time: 2024-12-07 13:42:00.043997
+End name method: authorization
+URL: https://www.litres.ru/
+
+-----
+
+-----
+Test: litres.ru AQA/tests/test_profile.py::test_profile_check (call)
+Start time: 2024-12-07 13:42:11.083435
+Start name method: authorization
+
+End time: 2024-12-07 13:42:15.582542
+End name method: authorization
+URL: https://www.litres.ru/
+
+-----
+
+-----
+Test: litres.ru AQA/tests/test_profile.py::test_logout (call)
+Start time: 2024-12-07 13:42:23.712674
+Start name method: authorization
+
+End time: 2024-12-07 13:42:28.956105
+End name method: authorization
+URL: https://www.litres.ru/
+
+-----
+
+-----
+Test: litres.ru AQA/tests/test_search_book.py::test_select_and_pay_book (call)
+Start time: 2024-12-07 13:42:32.764574
+Start name method: authorization
+
+End time: 2024-12-07 13:42:37.979256
+End name method: authorization
+URL: https://www.litres.ru/
+
+-----
+
+-----
+Test: litres.ru AQA/tests/test_search_book.py::test_favorite_book (call)
+Start time: 2024-12-07 13:42:43.883896
+Start name method: authorization
+
+End time: 2024-12-07 13:42:48.798465
+End name method: authorization
+URL: https://www.litres.ru/
+
+-----
